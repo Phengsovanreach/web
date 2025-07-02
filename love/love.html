@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #3f5efb;
+      background: radial-gradient(
+        circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%
+      );
+    }
+
+    .container {
+      margin: auto;
+      width: 300px;
+      height: 200px;
+      background: #eeaeca;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      border-radius: 10px;
+      margin-top: 30px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 10px black;
+    }
+
+    .title {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      height: 50%;
+      width: 100%;
+      /* background-color: #3f5efb; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .left {
+      width: 50%;
+      height: 100%;
+      /* background-color: #eeaeca; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+      /* background-color: aquamarine; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .yes {
+      width: 30px;
+      height: 20px;
+    }
+
+    .no {
+      width: 35px;
+      height: 20px;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <div class="text">
+          <img
+            src="https://imgs.search.brave.com/gJaoL9HcAWlItn2wjTfQqk_slpdQLRK2TvFzSLIPSFU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/QzM1dDRQZjVHbGdB/QUFBbS9wZWFjaC1h/bmQtZ29tYS1jdXRl/LndlYnA"
+            alt=""
+          />
+          Do you Love me🥹🥹?
+          <img
+            src="https://imgs.search.brave.com/s3D_CALSwQVGlKMsw9IEjoYPonDeNRpkJ_89EEm3-Hc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/d2JxREg2aG1fZ2NB/QUFBbS9wZWFjaC1n/b21hLXBlYWNoLWFu/ZC1nb21hLndlYnA"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="btn">
+        <div class="left">
+          <button class="yes" id="yes">Yes</button>
+          <!-- Surprise Lottie Animation -->
+          <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_tutvdemz.json "
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px; margin: auto; display: none"
+            id="loveAnimation"
+          >
+          </lottie-player>
+        </div>
+        <div class="right">
+          <button class="no" id="no">NO!!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="love.js"></script>
+  <script src="https://unpkg.com/ @lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>
